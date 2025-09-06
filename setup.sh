@@ -25,8 +25,8 @@ conda install -y pytorch torchvision torchaudio pytorch-cuda="${CUDA_VER}" -c py
 echo ">>> 5/7 Installing sglang[all]==0.4.6.post5"
 python -m pip install "sglang[all]==0.4.6.post5"
 
-echo ">>> 6/7 Installing expecttest"
-python -m pip install expecttest
+echo ">>> 6/7 Installing wandb torchdata and math-verify"
+python -m pip install wandb torchdata math-verify
 
 echo ">>> 7/7 Adding environment to Jupyter notebook"
 conda install -y ipykernel
